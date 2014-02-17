@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding="utf-8"?>
+<config_root>
+	<show_title>File Manager</show_title>
+	<load_disk_volume>E:</load_disk_volume>
+	<data_area>
+		<tab_area tabName="showAllFiles" displayName="全部文件列表" selectTextBox="text_box">
+			<data_table tableName="showAllFiles">
+				<column name="name" data_type="text" width="150"/>
+				<column name="size" data_type="long" width="100"/>
+				<column name="path" data_type="text" width="300"/>
+				<column name="createDate" data_type="text" width="120"/>
+				<column name="modifyDate" data_type="text" width="120"/>
+				<column name="lastAccessDate" data_type="text" width="120"/>
+			</data_table>
+		</tab_area>
+		<tab_area tabName="findSameFiles" displayName="查看同名同大小文件" selectTextBox="text_box">
+			<data_table tableName="findSameFiles">
+				<column name="name" data_type="text" width="250"/>
+				<column name="times" data_type="long" width="50"/>
+				<column name="size" data_type="long" width="100"/>
+				<column name="path" data_type="text" width="600"/>
+			</data_table>
+		</tab_area>
+	</data_area>
+	<commu_area name="connection list" position="left">
+	</commu_area>
+	<commu_area name="communications" position="bottom">
+	</commu_area>
+</config_root>

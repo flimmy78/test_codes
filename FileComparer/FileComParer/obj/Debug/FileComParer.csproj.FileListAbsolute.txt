@@ -1,0 +1,9 @@
+E:\test_code\FileComparer\FileComParer\obj\Debug\ResolveAssemblyReference.cache
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComParer.csproj.GenerateResource.Cache
+E:\test_code\FileComparer\Debug\FileComparer.exe
+E:\test_code\FileComparer\Debug\FileComparer.pdb
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComparer.Properties.Resources.resources
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComparer.exe
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComparer.pdb
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComParer.MainForm.resources
+E:\test_code\FileComparer\FileComParer\obj\Debug\FileComparer.UserListView.resources

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding="utf-8"?>
+<config_root>
+	<show_title>abcde</show_title>
+	<data_area>
+		<tab_area name="Connect">
+			<data_table>
+				<column name="Addr" data_type="long" width="50"/>
+				<column name="SPI" data_type="bit" width="30"/>
+				<column name="OV" data_type="text" width="100"/>
+				<column name="IV" data_type="text" width="100"/>
+			</data_table>
+		</tab_area>
+		<tab_area name="DiSinglePoint">
+			<data_table>
+				<column name="Addr" data_type="long" width="50"/>
+				<column name="SPI" data_type="bit" width="30"/>
+				<column name="OV" data_type="text" width="100"/>
+				<column name="IV" data_type="text" width="100"/>
+			</data_table>
+		</tab_area>
+		<tab_area name="DiDoublePoint">
+			<data_table>
+				<column name="Addr" data_type="long" width="50"/>
+				<column name="SPI" data_type="bit" width="30"/>
+				<column name="OV" data_type="text" width="100"/>
+				<column name="IV" data_type="text" width="100"/>
+			</data_table>
+		</tab_area>
+		<tab_area name="abcd">
+			<data_table>
+				<column name="column1" data_type="long" width="50"/>
+				<column name="column2" data_type="bit" width="30"/>
+				<column name="column3" data_type="text" width="100"/>
+			</data_table>
+		</tab_area>
+		<tab_area name="abcd dp">
+			<data_table>
+				<column name="column1" data_type="long"/>
+				<column name="column2" data_type="bit"/>
+				<column name="column3" data_type="text"/>
+			</data_table>
+		</tab_area>
+		<tab_area name="abcd yy">
+			<data_table>
+				<column name="column1" data_type="long"/>
+				<column name="column2" data_type="bit"/>
+				<column name="column3" data_type="text"/>
+				<column name="column4" data_type="text"/>
+			</data_table>
+		</tab_area>
+	</data_area>
+	<commu_area name="connection list" position="left">
+	</commu_area>
+	<commu_area name="communications" position="bottom">
+	</commu_area>
+</config_root>
