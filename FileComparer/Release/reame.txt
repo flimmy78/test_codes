@@ -1,6 +1,0 @@
-confige file:configUI.xml
-
-load the volume label:load_disk_volume, value like "E:"
-just support one volume.
-
-support alt+enter to show file's properties.
