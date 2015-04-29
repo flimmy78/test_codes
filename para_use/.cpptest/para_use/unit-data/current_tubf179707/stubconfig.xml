@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><SymbolsConfig formatVersion="1.0" toolName="C++Test">
-<Function id="printf" type="user"/>
-<Function id="_ZN7myClass9addBigOneEii" type="user"/>
-<Function id="_ZN9classBaseC9Ei" type="orig"/>
-<Function id="_ZN7myClass11getIntValueEv" type="orig"/>
-<Function id="_ZN7myClassC9Ei" type="orig"/>
-<Function id="_Z8printStrPc" type="orig"/>
-</SymbolsConfig>

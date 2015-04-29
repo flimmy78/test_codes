@@ -46,6 +46,6 @@ if __name__=="__main__":
 	print 'start...'
 	print "current_path", current_path
 	clear_all_debug_release_dir(current_path)
-	list_s_files(current_path, [".lib", ".dll"])
+	list_s_files(current_path, [".lib", ".dll", ".opt", ".obj"])
 	print 'end'
 	

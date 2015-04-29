@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<LibrarySymbols tool="C++Test" formatVersion="1.0" source="E:\test_code\para_use\.cpptest\para_use\file-data\classBase.cpp8d2930f4\classBase.obj">
-    <Symbol name="??1classBase@@QAE@XZ" remangled="JclassBaseZ10FvvZ"/>
-    <Symbol name="?printValue@classBase@@QAEHXZ" remangled="JclassBaseZKprintValue0FivZ"/>
-</LibrarySymbols>
