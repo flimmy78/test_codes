@@ -13,6 +13,8 @@ def list_s_files(dir_path, name_like):
 			r, e = os.path.splitext(full_x)
 			if(e in name_like):
 				print "name_like file:", full_x
+				#os.remove(full_x)
+				#print "removed file:", full_x
 			continue
 			
 		else: 
@@ -46,6 +48,6 @@ if __name__=="__main__":
 	print 'start...'
 	print "current_path", current_path
 	clear_all_debug_release_dir(current_path)
-	list_s_files(current_path, [".lib", ".dll", ".opt", ".obj"])
+	list_s_files(current_path, [".lib", ".dll", ".opt", ".obj", ".user"])
 	print 'end'
 	
