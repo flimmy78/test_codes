@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace FileComParer
+namespace FileComparer
 {
     public class WinHelper
     {
@@ -94,7 +94,11 @@ namespace FileComParer
 
         public static void openExplorer(string path)
         {
-            Process.Start("Explorer.exe", "/select," + path);
+            if (path.Length > 1 && path.IndexOf("\"") < 0)
+            {
+                path = "\"" + path + "\"";
+            }
+            Process.Start("Explorer.exe ", "/select, " + path);
         }
     }
 }

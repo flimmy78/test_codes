@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Symbols version="2.0">
+    <File name="C:\Program Files\Parasoft\C++test for Visual Studio\9.1\engine\etc\safestubs\safe_stubs_win32.c" id="1"/>
+    <Function id="exit" name="ZEexit5X" decorated_name="void exit(int)">
+      <definition type="safe" source="code" file_id="1" line="143" col="54"/>
+    </Function>
+    <Function id="_exit" name="ZF_exit5X" decorated_name="void _exit(int)">
+      <definition type="safe" source="code" file_id="1" line="124" col="55"/>
+    </Function>
+    <Function id="abort" name="ZFabort5X" decorated_name="void abort(void)">
+      <definition type="safe" source="code" file_id="1" line="138" col="31"/>
+    </Function>
+    <Function id="ExitProcess" name="ZLExitProcess5X" decorated_name="void ExitProcess(UINT)">
+      <definition type="safe" source="code" file_id="1" line="533" col="31"/>
+    </Function>
+    <Function id="TerminateProcess" name="ZbATerminateProcess5X" decorated_name="BOOL TerminateProcess(HANDLE, UINT)">
+      <definition type="safe" source="code" file_id="1" line="539" col="13"/>
+    </Function>
+    <Function id="CreateThread" name="ZMCreateThread5X" decorated_name="HANDLE CreateThread(LPSECURITY_ATTRIBUTES, SIZE_T, LPTHREAD_START_ROUTINE, LPVOID, DWORD, LPDWORD)">
+      <definition type="safe" source="code" file_id="1" line="414" col="15"/>
+    </Function>
+    <Function id="CreateRemoteThread" name="ZbCCreateRemoteThread5X" decorated_name="HANDLE CreateRemoteThread(HANDLE, LPSECURITY_ATTRIBUTES, SIZE_T, LPTHREAD_START_ROUTINE, LPVOID, DWORD, LPDWORD)">
+      <definition type="safe" source="code" file_id="1" line="427" col="15"/>
+    </Function>
+    <Function id="WriteFile" name="ZJWriteFile5X" decorated_name="BOOL WriteFile(HANDLE, LPCVOID, DWORD, LPDWORD, LPOVERLAPPED)">
+      <definition type="safe" source="code" file_id="1" line="378" col="13"/>
+    </Function>
+    <Function id="SetEndOfFile" name="ZMSetEndOfFile5X" decorated_name="BOOL SetEndOfFile(HANDLE)">
+      <definition type="safe" source="code" file_id="1" line="327" col="13"/>
+    </Function>
+    <Function id="SetFileTime" name="ZLSetFileTime5X" decorated_name="BOOL SetFileTime(HANDLE, const FILETIME *, const FILETIME *, const FILETIME *)">
+      <definition type="safe" source="code" file_id="1" line="368" col="13"/>
+    </Function>
+    <Function id="SetFileValidData" name="ZbASetFileValidData5X" decorated_name="BOOL SetFileValidData(HANDLE, LONGLONG)">
+      <definition type="safe" source="code" file_id="1" line="635" col="13"/>
+    </Function>
+    <Function id="SetFileShortNameA" name="ZbBSetFileShortNameA5X" decorated_name="BOOL SetFileShortNameA(HANDLE, LPCSTR)">
+      <definition type="safe" source="code" file_id="1" line="643" col="13"/>
+    </Function>
+    <Function id="SetFileShortNameW" name="ZbBSetFileShortNameW5X" decorated_name="BOOL SetFileShortNameW(HANDLE, LPCWSTR)">
+      <definition type="safe" source="code" file_id="1" line="651" col="13"/>
+    </Function>
+    <Function id="OpenFile" name="ZIOpenFile5X" decorated_name="HFILE OpenFile(LPCSTR, LPOFSTRUCT, UINT)">
+      <definition type="safe" source="code" file_id="1" line="223" col="14"/>
+    </Function>
+    <Function id="WriteFileEx" name="ZLWriteFileEx5X" decorated_name="BOOL WriteFileEx(HANDLE, LPCVOID, DWORD, LPOVERLAPPED, LPOVERLAPPED_COMPLETION_ROUTINE)">
+      <definition type="safe" source="code" file_id="1" line="390" col="13"/>
+    </Function>
+    <Function id="WriteFileGather" name="ZPWriteFileGather5X" decorated_name="BOOL WriteFileGather(HANDLE, FILE_SEGMENT_ELEMENT *, DWORD, LPDWORD, LPOVERLAPPED)">
+      <definition type="safe" source="code" file_id="1" line="402" col="13"/>
+    </Function>
+    <Function id="CreateProcessA" name="ZOCreateProcessA5X" decorated_name="BOOL CreateProcessA(LPCSTR, LPSTR, LPSECURITY_ATTRIBUTES, LPSECURITY_ATTRIBUTES, BOOL, DWORD, LPVOID, LPCSTR, LPSTARTUPINFOA, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="440" col="13"/>
+    </Function>
+    <Function id="CreateProcessW" name="ZOCreateProcessW5X" decorated_name="BOOL CreateProcessW(LPCWSTR, LPWSTR, LPSECURITY_ATTRIBUTES, LPSECURITY_ATTRIBUTES, BOOL, DWORD, LPVOID, LPCWSTR, LPSTARTUPINFOW, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="455" col="13"/>
+    </Function>
+    <Function id="CreateDirectoryA" name="ZbACreateDirectoryA5X" decorated_name="BOOL CreateDirectoryA(LPCSTR, LPSECURITY_ATTRIBUTES)">
+      <definition type="safe" source="code" file_id="1" line="150" col="13"/>
+    </Function>
+    <Function id="CreateDirectoryW" name="ZbACreateDirectoryW5X" decorated_name="BOOL CreateDirectoryW(LPCWSTR, LPSECURITY_ATTRIBUTES)">
+      <definition type="safe" source="code" file_id="1" line="157" col="13"/>
+    </Function>
+    <Function id="CreateDirectoryExA" name="ZbCCreateDirectoryExA5X" decorated_name="BOOL CreateDirectoryExA(LPCSTR, LPCSTR, LPSECURITY_ATTRIBUTES)">
+      <definition type="safe" source="code" file_id="1" line="164" col="13"/>
+    </Function>
+    <Function id="CreateDirectoryExW" name="ZbCCreateDirectoryExW5X" decorated_name="BOOL CreateDirectoryExW(LPCWSTR, LPCWSTR, LPSECURITY_ATTRIBUTES)">
+      <definition type="safe" source="code" file_id="1" line="173" col="13"/>
+    </Function>
+    <Function id="RemoveDirectoryA" name="ZbARemoveDirectoryA5X" decorated_name="BOOL RemoveDirectoryA(LPCSTR)">
+      <definition type="safe" source="code" file_id="1" line="182" col="13"/>
+    </Function>
+    <Function id="RemoveDirectoryW" name="ZbARemoveDirectoryW5X" decorated_name="BOOL RemoveDirectoryW(LPCWSTR)">
+      <definition type="safe" source="code" file_id="1" line="189" col="13"/>
+    </Function>
+    <Function id="CreateFileA" name="ZLCreateFileA5X" decorated_name="HANDLE CreateFileA(LPCSTR, DWORD, DWORD, LPSECURITY_ATTRIBUTES, DWORD, DWORD, HANDLE)">
+      <definition type="safe" source="code" file_id="1" line="196" col="15"/>
+    </Function>
+    <Function id="CreateFileW" name="ZLCreateFileW5X" decorated_name="HANDLE CreateFileW(LPCWSTR, DWORD, DWORD, LPSECURITY_ATTRIBUTES, DWORD, DWORD, HANDLE)">
+      <definition type="safe" source="code" file_id="1" line="209" col="15"/>
+    </Function>
+    <Function id="SetFileAttributesA" name="ZbCSetFileAttributesA5X" decorated_name="BOOL SetFileAttributesA(LPCSTR, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="334" col="13"/>
+    </Function>
+    <Function id="SetFileAttributesW" name="ZbCSetFileAttributesW5X" decorated_name="BOOL SetFileAttributesW(LPCWSTR, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="342" col="13"/>
+    </Function>
+    <Function id="DeleteFileA" name="ZLDeleteFileA5X" decorated_name="BOOL DeleteFileA(LPCSTR)">
+      <definition type="safe" source="code" file_id="1" line="233" col="13"/>
+    </Function>
+    <Function id="DeleteFileW" name="ZLDeleteFileW5X" decorated_name="BOOL DeleteFileW(LPCWSTR)">
+      <definition type="safe" source="code" file_id="1" line="240" col="13"/>
+    </Function>
+    <Function id="CopyFileA" name="ZJCopyFileA5X" decorated_name="BOOL CopyFileA(LPCSTR, LPCSTR, BOOL)">
+      <definition type="safe" source="code" file_id="1" line="247" col="13"/>
+    </Function>
+    <Function id="CopyFileW" name="ZJCopyFileW5X" decorated_name="BOOL CopyFileW(LPCWSTR, LPCWSTR, BOOL)">
+      <definition type="safe" source="code" file_id="1" line="256" col="13"/>
+    </Function>
+    <Function id="CopyFileExA" name="ZLCopyFileExA5X" decorated_name="BOOL CopyFileExA(LPCSTR, LPCSTR, LPPROGRESS_ROUTINE, LPVOID, LPBOOL, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="267" col="13"/>
+    </Function>
+    <Function id="CopyFileExW" name="ZLCopyFileExW5X" decorated_name="BOOL CopyFileExW(LPCWSTR, LPCWSTR, LPPROGRESS_ROUTINE, LPVOID, LPBOOL, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="279" col="13"/>
+    </Function>
+    <Function id="MoveFileA" name="ZJMoveFileA5X" decorated_name="BOOL MoveFileA(LPCSTR, LPCSTR)">
+      <definition type="safe" source="code" file_id="1" line="293" col="13"/>
+    </Function>
+    <Function id="MoveFileW" name="ZJMoveFileW5X" decorated_name="BOOL MoveFileW(LPCWSTR, LPCWSTR)">
+      <definition type="safe" source="code" file_id="1" line="301" col="13"/>
+    </Function>
+    <Function id="MoveFileExA" name="ZLMoveFileExA5X" decorated_name="BOOL MoveFileExA(LPCSTR, LPCSTR, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="309" col="13"/>
+    </Function>
+    <Function id="MoveFileExW" name="ZLMoveFileExW5X" decorated_name="BOOL MoveFileExW(LPCWSTR, LPCWSTR, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="318" col="13"/>
+    </Function>
+    <Function id="ReplaceFileA" name="ZMReplaceFileA5X" decorated_name="BOOL ReplaceFileA(LPCSTR, LPCSTR, LPCSTR, DWORD, LPVOID, LPVOID)">
+      <definition type="safe" source="code" file_id="1" line="609" col="13"/>
+    </Function>
+    <Function id="ReplaceFileW" name="ZMReplaceFileW5X" decorated_name="BOOL ReplaceFileW(LPCWSTR, LPCWSTR, LPCWSTR, DWORD, LPVOID, LPVOID)">
+      <definition type="safe" source="code" file_id="1" line="621" col="13"/>
+    </Function>
+    <Function id="SetFileSecurityA" name="ZbASetFileSecurityA5X" decorated_name="BOOL SetFileSecurityA(LPCSTR, SECURITY_INFORMATION, PSECURITY_DESCRIPTOR)">
+      <definition type="safe" source="code" file_id="1" line="350" col="13"/>
+    </Function>
+    <Function id="SetFileSecurityW" name="ZbASetFileSecurityW5X" decorated_name="BOOL SetFileSecurityW(LPCWSTR, SECURITY_INFORMATION, PSECURITY_DESCRIPTOR)">
+      <definition type="safe" source="code" file_id="1" line="359" col="13"/>
+    </Function>
+    <Function id="CreateProcessAsUserA" name="ZbECreateProcessAsUserA5X" decorated_name="BOOL CreateProcessAsUserA(HANDLE, LPCSTR, LPSTR, LPSECURITY_ATTRIBUTES, LPSECURITY_ATTRIBUTES, BOOL, DWORD, LPVOID, LPCSTR, LPSTARTUPINFOA, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="470" col="13"/>
+    </Function>
+    <Function id="CreateProcessAsUserW" name="ZbECreateProcessAsUserW5X" decorated_name="BOOL CreateProcessAsUserW(HANDLE, LPCWSTR, LPWSTR, LPSECURITY_ATTRIBUTES, LPSECURITY_ATTRIBUTES, BOOL, DWORD, LPVOID, LPCWSTR, LPSTARTUPINFOW, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="487" col="13"/>
+    </Function>
+    <Function id="CreateProcessWithLogonW" name="ZbHCreateProcessWithLogonW5X" decorated_name="BOOL CreateProcessWithLogonW(LPCWSTR, LPCWSTR, LPCWSTR, DWORD, LPCWSTR, LPWSTR, DWORD, LPVOID, LPCWSTR, LPSTARTUPINFOW, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="503" col="13"/>
+    </Function>
+    <Function id="CreateProcessWithTokenW" name="ZbHCreateProcessWithTokenW5X" decorated_name="BOOL CreateProcessWithTokenW(HANDLE, DWORD, LPCWSTR, LPWSTR, DWORD, LPVOID, LPCWSTR, LPSTARTUPINFOW, LPPROCESS_INFORMATION)">
+      <definition type="safe" source="code" file_id="1" line="519" col="13"/>
+    </Function>
+    <Function id="ExitWindowsEx" name="ZNExitWindowsEx5X" decorated_name="BOOL ExitWindowsEx(UINT, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="547" col="13"/>
+    </Function>
+    <Function id="LockWorkStation" name="ZPLockWorkStation5X" decorated_name="BOOL LockWorkStation(void)">
+      <definition type="safe" source="code" file_id="1" line="601" col="13"/>
+    </Function>
+    <Function id="InitiateSystemShutdownA" name="ZbHInitiateSystemShutdownA5X" decorated_name="BOOL InitiateSystemShutdownA(LPSTR, LPSTR, DWORD, BOOL, BOOL)">
+      <definition type="safe" source="code" file_id="1" line="554" col="15"/>
+    </Function>
+    <Function id="InitiateSystemShutdownW" name="ZbHInitiateSystemShutdownW5X" decorated_name="BOOL InitiateSystemShutdownW(LPWSTR, LPWSTR, DWORD, BOOL, BOOL)">
+      <definition type="safe" source="code" file_id="1" line="565" col="15"/>
+    </Function>
+    <Function id="InitiateSystemShutdownExA" name="ZbJInitiateSystemShutdownExA5X" decorated_name="BOOL InitiateSystemShutdownExA(LPSTR, LPSTR, DWORD, BOOL, BOOL, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="576" col="15"/>
+    </Function>
+    <Function id="InitiateSystemShutdownExW" name="ZbJInitiateSystemShutdownExW5X" decorated_name="BOOL InitiateSystemShutdownExW(LPWSTR, LPWSTR, DWORD, BOOL, BOOL, DWORD)">
+      <definition type="safe" source="code" file_id="1" line="588" col="15"/>
+    </Function>
+    <Function id="_mkdir" name="ZG_mkdir5X" decorated_name="int _mkdir(const char *)">
+      <definition type="safe" source="code" file_id="1" line="666" col="29"/>
+    </Function>
+    <Function id="_rmdir" name="ZG_rmdir5X" decorated_name="int _rmdir(const char *)">
+      <definition type="safe" source="code" file_id="1" line="676" col="29"/>
+    </Function>
+    <Function id="_wmkdir" name="ZH_wmkdir5X" decorated_name="int _wmkdir(const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="875" col="29"/>
+    </Function>
+    <Function id="_wrmdir" name="ZH_wrmdir5X" decorated_name="int _wrmdir(const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="880" col="29"/>
+    </Function>
+    <Function id="mkdir" name="ZFmkdir5X" decorated_name="int mkdir(const char *)">
+      <definition type="safe" source="code" file_id="1" line="661" col="29"/>
+    </Function>
+    <Function id="rmdir" name="ZFrmdir5X" decorated_name="int rmdir(const char *)">
+      <definition type="safe" source="code" file_id="1" line="671" col="29"/>
+    </Function>
+    <Function id="_chmod" name="ZG_chmod5X" decorated_name="int _chmod(const char *, int)">
+      <definition type="safe" source="code" file_id="1" line="760" col="29"/>
+    </Function>
+    <Function id="_chsize" name="ZH_chsize5X" decorated_name="int _chsize(int, long)">
+      <definition type="safe" source="code" file_id="1" line="745" col="29"/>
+    </Function>
+    <Function id="_creat" name="ZG_creat5X" decorated_name="int _creat(const char *, int)">
+      <definition type="safe" source="code" file_id="1" line="710" col="29"/>
+    </Function>
+    <Function id="_lseek" name="ZG_lseek5X" decorated_name="long _lseek(int, long, int)">
+      <definition type="safe" source="code" file_id="1" line="750" col="30"/>
+    </Function>
+    <Function id="remove" name="ZGremove5X" decorated_name="int remove(const char *)">
+      <definition type="safe" source="code" file_id="1" line="720" col="29"/>
+    </Function>
+    <Function id="rename" name="ZGrename5X" decorated_name="int rename(const char *, const char *)">
+      <definition type="safe" source="code" file_id="1" line="735" col="29"/>
+    </Function>
+    <Function id="_unlink" name="ZH_unlink5X" decorated_name="int _unlink(const char *)">
+      <definition type="safe" source="code" file_id="1" line="725" col="29"/>
+    </Function>
+    <Function id="unlink" name="ZGunlink5X" decorated_name="int unlink(const char *)">
+      <definition type="safe" source="code" file_id="1" line="730" col="29"/>
+    </Function>
+    <Function id="_open" name="ZF_open5X" decorated_name="int _open(const char *, int, ...)">
+      <definition type="safe" source="code" file_id="1" line="700" col="29"/>
+    </Function>
+    <Function id="_sopen" name="ZG_sopen5X" decorated_name="int _sopen(const char *, int, int, ...)">
+      <definition type="safe" source="code" file_id="1" line="705" col="29"/>
+    </Function>
+    <Function id="_wchmod" name="ZH_wchmod5X" decorated_name="int _wchmod(const wchar_t *, int)">
+      <definition type="safe" source="code" file_id="1" line="929" col="29"/>
+    </Function>
+    <Function id="_wcreat" name="ZH_wcreat5X" decorated_name="int _wcreat(const wchar_t *, int)">
+      <definition type="safe" source="code" file_id="1" line="909" col="29"/>
+    </Function>
+    <Function id="_wunlink" name="ZI_wunlink5X" decorated_name="int _wunlink(const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="914" col="29"/>
+    </Function>
+    <Function id="_wrename" name="ZI_wrename5X" decorated_name="int _wrename(const wchar_t *, const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="924" col="29"/>
+    </Function>
+    <Function id="_wopen" name="ZG_wopen5X" decorated_name="int _wopen(const wchar_t *, int, ...)">
+      <definition type="safe" source="code" file_id="1" line="899" col="29"/>
+    </Function>
+    <Function id="_wsopen" name="ZH_wsopen5X" decorated_name="int _wsopen(const wchar_t *, int, int, ...)">
+      <definition type="safe" source="code" file_id="1" line="904" col="29"/>
+    </Function>
+    <Function id="chmod" name="ZFchmod5X" decorated_name="int chmod(const char *, int)">
+      <definition type="safe" source="code" file_id="1" line="765" col="29"/>
+    </Function>
+    <Function id="chsize" name="ZGchsize5X" decorated_name="int chsize(int, long)">
+      <definition type="safe" source="code" file_id="1" line="755" col="29"/>
+    </Function>
+    <Function id="creat" name="ZFcreat5X" decorated_name="int creat(const char *, int)">
+      <definition type="safe" source="code" file_id="1" line="715" col="29"/>
+    </Function>
+    <Function id="open" name="ZEopen5X" decorated_name="int open(const char *, int, ...)">
+      <definition type="safe" source="code" file_id="1" line="695" col="29"/>
+    </Function>
+    <Function id="_wassert" name="ZI_wassert5X" decorated_name="void _wassert(const wchar_t *, const wchar_t *, unsigned int)">
+      <definition type="safe" source="code" file_id="1" line="870" col="30"/>
+    </Function>
+    <Function id="raise" name="ZFraise5X" decorated_name="int raise(int)">
+      <definition type="safe" source="code" file_id="1" line="129" col="29"/>
+    </Function>
+    <Function id="_fsopen" name="ZH_fsopen5X" decorated_name="FILE * _fsopen(const char *, const char *, int)">
+      <definition type="safe" source="code" file_id="1" line="689" col="32"/>
+    </Function>
+    <Function id="fopen" name="ZFfopen5X" decorated_name="FILE * fopen(const char *, const char *)">
+      <definition type="safe" source="code" file_id="1" line="681" col="32"/>
+    </Function>
+    <Function id="fprintf" name="ZHfprintf5X" decorated_name="int fprintf(FILE *, const char *, ...)">
+      <definition type="safe" source="code" file_id="1" line="770" col="29"/>
+    </Function>
+    <Function id="fputc" name="ZFfputc5X" decorated_name="int fputc(int, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="775" col="29"/>
+    </Function>
+    <Function id="fputs" name="ZFfputs5X" decorated_name="int fputs(const char *, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="780" col="29"/>
+    </Function>
+    <Function id="fseek" name="ZFfseek5X" decorated_name="int fseek(FILE *, long, int)">
+      <definition type="safe" source="code" file_id="1" line="740" col="29"/>
+    </Function>
+    <Function id="fwrite" name="ZGfwrite5X" decorated_name="size_t fwrite(const void *, size_t, size_t, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="786" col="32"/>
+    </Function>
+    <Function id="putc" name="ZEputc5X" decorated_name="int putc(int, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="798" col="29"/>
+    </Function>
+    <Function id="puts" name="ZEputs5X" decorated_name="int puts(const char *)">
+      <definition type="safe" source="code" file_id="1" line="804" col="29"/>
+    </Function>
+    <Function id="_putw" name="ZF_putw5X" decorated_name="int _putw(int, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="809" col="29"/>
+    </Function>
+    <Function id="_wfsopen" name="ZI_wfsopen5X" decorated_name="FILE * _wfsopen(const wchar_t *, const wchar_t *, int)">
+      <definition type="safe" source="code" file_id="1" line="893" col="32"/>
+    </Function>
+    <Function id="fputwc" name="ZGfputwc5X" decorated_name="wint_t fputwc(wchar_t, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="946" col="32"/>
+    </Function>
+    <Function id="fputws" name="ZGfputws5X" decorated_name="int fputws(const wchar_t *, FILE *)">
+      <definition type="safe" source="code" file_id="1" line="939" col="29"/>
+    </Function>
+    <Function id="_putws" name="ZG_putws5X" decorated_name="int _putws(const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="960" col="29"/>
+    </Function>
+    <Function id="fwprintf" name="ZIfwprintf5X" decorated_name="int fwprintf(FILE *, const wchar_t *, ...)">
+      <definition type="safe" source="code" file_id="1" line="934" col="29"/>
+    </Function>
+    <Function id="vfwprintf" name="ZJvfwprintf5X" decorated_name="int vfwprintf(FILE *, const wchar_t *, va_list)">
+      <definition type="safe" source="code" file_id="1" line="965" col="29"/>
+    </Function>
+    <Function id="_wfopen" name="ZH_wfopen5X" decorated_name="FILE * _wfopen(const wchar_t *, const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="885" col="32"/>
+    </Function>
+    <Function id="_wremove" name="ZI_wremove5X" decorated_name="int _wremove(const wchar_t *)">
+      <definition type="safe" source="code" file_id="1" line="919" col="29"/>
+    </Function>
+    <Pragma id="4133105864_0_79" type="comment_lib" value="uuid.lib"/>
+    <Pragma id="429486022_0_352" type="comment_lib" value="uuid.lib"/>
+</Symbols>
+

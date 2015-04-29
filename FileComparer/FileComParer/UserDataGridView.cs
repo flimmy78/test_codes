@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace FileComParer
+namespace FileComparer
 {
     partial class UserDataGridView : DataGridView
     {
@@ -24,7 +24,7 @@ namespace FileComParer
             this.ScrollBars = ScrollBars.Vertical | ScrollBars.Horizontal;
             this.Dock = DockStyle.None;
             this.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-            this.BackgroundColor = Color.White;
+            this.BackgroundColor = ConfigParser.getConfigParaColor(m_config.m_tableBackgroundColor);
             this.DoubleBuffered = true; // stopping flash data. maybe call cellpainting too much.
 
             DataGridViewColumn col = new DataGridViewTextBoxColumn();
@@ -54,6 +54,10 @@ namespace FileComParer
                     newPadding.Left = 18;
                     col.DefaultCellStyle.Padding = newPadding;
                 }
+                if ("size" == col.Name)
+                {
+                    col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                }
             }
             //this.RowCount = 1;
             this.AllowUserToAddRows = false;
@@ -61,6 +65,11 @@ namespace FileComParer
             this.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.RowHeadersVisible = false;
+
+            this.EnableHeadersVisualStyles = false; //If you do not set the EnableHeadersVisualStyles flag to False, then the changes you make to the style of the header will not take effect, as the grid will use the style from the current users default theme. from: http://stackoverflow.com/questions/1247800/how-to-change-the-color-of-winform-datagridview-header
+            this.ColumnHeadersDefaultCellStyle.BackColor = ConfigParser.getConfigParaColor(m_config.m_columnHeadersBackColor);
+            Font ft = new Font(this.ColumnHeadersDefaultCellStyle.Font, FontStyle.Bold);
+            this.ColumnHeadersDefaultCellStyle.Font = ft;
 
             //this.Rows[1].HeaderCell.Value = "Row1";
             //this.Rows[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -109,6 +118,7 @@ namespace FileComParer
             }
             this.Rows.Add(1);
             this.Rows[this.Rows.Count - 1].Cells[0].Value = pkey;
+            this.Rows[this.Rows.Count - 1].DefaultCellStyle.BackColor = ConfigParser.getConfigParaColor(m_config.m_rowsBackColor); ;
             dataItemUpdate(msg);
             //this.Rows[this.Rows.Count - 1]
         }
@@ -246,16 +256,16 @@ namespace FileComParer
 
         public void dgv_CellMouseMove(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex > 0)
+            if (e.RowIndex >= 0)
             {
-                this.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightSkyBlue;
+                this.Rows[e.RowIndex].DefaultCellStyle.BackColor = ConfigParser.getConfigParaColor(m_config.m_rowMouseMoveBackColor);
             }
         }
         public void dgv_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > 0)
+            if (e.RowIndex >= 0)
             {
-                this.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                this.Rows[e.RowIndex].DefaultCellStyle.BackColor = ConfigParser.getConfigParaColor(m_config.m_rowMouseLeaveBackColor);
             }
         }
 

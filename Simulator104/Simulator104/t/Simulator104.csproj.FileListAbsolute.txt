@@ -1,0 +1,8 @@
+E:\test_code\Simulator104\Simulator104\bin\Debug\Simulator104.exe
+E:\test_code\Simulator104\Simulator104\bin\Debug\Simulator104.pdb
+E:\test_code\Simulator104\Simulator104\obj\Debug\ResolveAssemblyReference.cache
+E:\test_code\Simulator104\Simulator104\obj\Debug\Simulator104.Properties.Resources.resources
+E:\test_code\Simulator104\Simulator104\obj\Debug\Simulator104.csproj.GenerateResource.Cache
+E:\test_code\Simulator104\Simulator104\obj\Debug\Simulator104.exe
+E:\test_code\Simulator104\Simulator104\obj\Debug\Simulator104.pdb
+E:\test_code\Simulator104\Simulator104\obj\Debug\Simulator104.Form1.resources

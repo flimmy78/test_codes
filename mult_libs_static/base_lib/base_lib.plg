@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: base_lib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSP3450.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/base_lib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\test_code\test_mult_libs\base_lib\baseClass.cpp"
+]
+Creating command line "cl.exe @C:\Users\haijun.li\AppData\Local\Temp\RSP3450.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\Debug\base_lib.lib"  .\Debug\baseClass.obj "
+<h3>Output Window</h3>
+Compiling...
+baseClass.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+base_lib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

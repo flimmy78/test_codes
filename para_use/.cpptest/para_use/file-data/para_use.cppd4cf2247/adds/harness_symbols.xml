@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Symbols version="2.0">
+    <File name="e:\test_code\para_use\para_use\para_use.cpp" id="1"/>
+    <Function id="_ZN7myClassC9Ei" name="HmyClassZ00FviZ" decorated_name="myClass::myClass(int)" stub_used="true" needed="true">
+      <stub_declaration complete="true">
+         <declaration_prefix> ::myClass::myClass (::</declaration_prefix>
+         <declaration_suffix>_Dummy __CPTR_stub_ctor_param, int a) </declaration_suffix>
+         <ctor_initializer>: ::classBase(a), m_n(a)</ctor_initializer>
+         <user_decl_header>myClass.h</user_decl_header>
+      </stub_declaration>
+      <dependencies>_ZN9classBaseC9Ei</dependencies>
+    </Function>
+    <Function id="_ZN7myClassD9Ev" name="HmyClassZ10FvvZ" decorated_name="myClass::~myClass(void)" needed="true">
+      <stub_declaration complete="true">
+         <declaration_prefix>void (::myClass::</declaration_prefix>
+         <declaration_suffix>_Stub_destructor) (void) </declaration_suffix>
+         <user_decl_header>myClass.h</user_decl_header>
+      </stub_declaration>
+      <dependencies>_ZN9classBaseD9Ev</dependencies>
+    </Function>
+    <Function id="_ZN7myClass9addBigOneEii" name="HmyClassZJaddBigOne0FviiZ" decorated_name="void myClass::addBigOne(int, int)" stub_used="true" needed="true">
+      <stub_declaration complete="true">
+         <declaration_prefix>void (::myClass::</declaration_prefix>
+         <declaration_suffix>_Stub_addBigOne) (int a, int b) </declaration_suffix>
+         <user_decl_header>myClass.h</user_decl_header>
+      </stub_declaration>
+    </Function>
+    <Function id="wmain" name="ZFwmainFiiKPPwZ" decorated_name="int wmain(int, _TCHAR **)">
+      <definition type="orig" source="code" file_id="1" line="7" col="5"/>
+    </Function>
+    <Function id="_ZN9classBaseD9Ev" name="JclassBaseZ10FvvZ" decorated_name="classBase::~classBase(void)">
+      <stub_declaration complete="true">
+         <declaration_prefix>void (::classBase::</declaration_prefix>
+         <declaration_suffix>_Stub_destructor) (void) </declaration_suffix>
+         <user_decl_header>classBase.h</user_decl_header>
+      </stub_declaration>
+    </Function>
+</Symbols>
+

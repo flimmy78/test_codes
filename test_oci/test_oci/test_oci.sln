@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_oci", "test_oci\test_oci.vcproj", "{3B7392A0-18F2-4326-96A3-254CED5507CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B7392A0-18F2-4326-96A3-254CED5507CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B7392A0-18F2-4326-96A3-254CED5507CD}.Debug|Win32.Build.0 = Debug|Win32
+		{3B7392A0-18F2-4326-96A3-254CED5507CD}.Release|Win32.ActiveCfg = Release|Win32
+		{3B7392A0-18F2-4326-96A3-254CED5507CD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

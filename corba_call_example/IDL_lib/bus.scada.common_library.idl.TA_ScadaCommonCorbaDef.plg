@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bus.scada.common_library.idl.TA_ScadaCommonCorbaDef - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\HaiJun.Li\AppData\Local\Temp\RSPF501.tmp" with contents
+[
+/nologo /MDd /Gm /GR /GX /ZI /Od /I "..\..\..\..\..\..\build\win32_n\transactive\bus\scada\common_library\IDL\src" /I "..\..\..\..\..\..\build\win32_n\transactive\core\exceptions\IDL\src" /I "..\..\..\..\..\..\build\win32_n\transactive\bus\scada\DataPointCorbaDef\src" /I "..\..\..\..\..\cots\omniOrb\omniORB_4.0.5\include" /I "..\..\..\..\..\cots\omniOrb\omniORB_4.0.5\include\COS" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "__WIN32__" /D "__x86__" /D "__NT__" /D __OSVERSION__=4 /Fp"../../../../../../build/win32_nd/transactive/bus/scada/common_library/IDL/src/bus.scada.common_library.idl.TA_ScadaCommonCorbaDef.pch" /YX /Fo"../../../../../../build/win32_nd/transactive/bus/scada/common_library/IDL/src/" /Fd"../../../../../../build/win32_nd/transactive/bus/scada/common_library/IDL/src/" /FD /GZ /c 
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\DataPointCorbaTypes.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\DataPointCorbaTypes_skel.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointAccessCorbaDef.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointAccessCorbaDef_skel.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointAgentCorbaDef.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointAgentCorbaDef_skel.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointStateUpdateCorbaDef.cpp"
+"E:\jun_4669_tip\Base_4669\Base\build\win32_n\transactive\bus\scada\common_library\IDL\src\IDataPointStateUpdateCorbaDef_skel.cpp"
+]
+Creating command line "cl.exe @C:\Users\HaiJun.Li\AppData\Local\Temp\RSPF501.tmp" 
+Creating temporary file "C:\Users\HaiJun.Li\AppData\Local\Temp\RSPF502.tmp" with contents
+[
+/nologo /out:"../../../../../../build/win32_nd/TA_ScadaCommonCorbaDef_d.lib" 
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\DataNodeCorbaTypes.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\DataNodeCorbaTypes_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\DataPointCorbaTypes.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\DataPointCorbaTypes_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataNodeAccessCorbaDef.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataNodeAccessCorbaDef_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataNodeAgentCorbaDef.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataNodeAgentCorbaDef_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointAccessCorbaDef.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointAccessCorbaDef_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointAgentCorbaDef.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointAgentCorbaDef_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointStateUpdateCorbaDef.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\IDataPointStateUpdateCorbaDef_skel.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\ScadaCorbaTypes.obj
+\jun_4669_tip\Base_4669\Base\build\win32_nd\transactive\bus\scada\common_library\IDL\src\ScadaCorbaTypes_skel.obj
+]
+Creating command line "link.exe -lib @C:\Users\HaiJun.Li\AppData\Local\Temp\RSPF502.tmp"
+<h3>Output Window</h3>
+Compiling...
+DataPointCorbaTypes.cpp
+DataPointCorbaTypes_skel.cpp
+IDataPointAccessCorbaDef.cpp
+IDataPointAccessCorbaDef_skel.cpp
+IDataPointAgentCorbaDef.cpp
+IDataPointAgentCorbaDef_skel.cpp
+IDataPointStateUpdateCorbaDef.cpp
+IDataPointStateUpdateCorbaDef_skel.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+TA_ScadaCommonCorbaDef_d.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

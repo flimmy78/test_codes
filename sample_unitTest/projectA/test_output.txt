@@ -1,0 +1,42 @@
+**********************************************************************************************************************
+Running the following methods from the Test Class:	'classATest'
+Results File:	'test_output.txt'
+Suite File:		''
+
+Testing method:	'testGet1'
+Input data file:	''
+Ouput data file:	''
+Looping:		'1'
+
+
+Testing method:	'testGet2'
+Input data file:	''
+Ouput data file:	''
+Looping:		'1'
+
+
+Testing method:	'testFGet1'
+Input data file:	''
+Ouput data file:	''
+Looping:		'1'
+
+**********************************************************************************************************************
+
+**********************************************************************************************************************
+Test Results for: classATest
+
+Tests Ran: 3		Failures: 1		Exceptions: 0
+
+There were no Test Errors
+There were 1 Assertion(s): 
+1)	line: 43
+	Filename:	E:\test_code\sample_unitTest\projectA\test\testA.cpp
+	TestMethod:	testFGet1
+	Assertion:	11 == v
+
+
+Time Taken For Test Case: 0.00 seconds.
+
+**********************************************************************************************************************
+
+

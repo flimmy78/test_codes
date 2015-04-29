@@ -4,11 +4,12 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Windows.Forms;
+using System.Drawing;
 
 
 //using MS.Internal.Mita.Foundation;
 
-namespace FileComParer
+namespace FileComparer
 {
     public static class GlobalVar
     {
@@ -17,40 +18,43 @@ namespace FileComParer
         public static string StartBtn_stop      = "Stop";
         public static string StressBtn_start    = "Stress On";
         public static string StressBtn_stop     = "Stress Off";
+
+        public static string VolumeIDsSeparator = "__###__";
+        public static string VolumeAllIDs       = "All";
     };
 
     public static class MessageTypes
     {
         public static string DirectCallBack     = "DirectCallBack";
         public static string DestroyBaseFactory = "DestroyBaseFactory";
-        public static string BaseFactoryStart   = "Start";
-        public static string BaseFactoryStop    = "Stop";
-        public static string BaseFactoryStressOn = "StressOn";
-        public static string BaseFactoryStressOff = "StressOff";
-        public static string ShowStatusMessage  = "ShowStatusMessage";
 
         public static string MessageAttibuteMessageTypeName = "MessageType";
         public static string MessageAttibuteSplitSign       = "=";
-        public static string MessageSplitSign = ",";
+        public static string MessageSplitSign = ",..,";
 
         public static string MessageAttibuteTabName         = "tabName";
 
         public static string UniIDColumnName = "RowRefIndex";
 
         //----------------------to service.
-        public static string LoadAllVolume          = "LoadAllVolume";
+        public static string LoadAllVolumeIDs       = "LoadAllVolumeIDs";
         public static string SetLoadVolume          = "SetLoadVolume";
         public static string UpdateSelectCondition  = "UpdateSelectCondition";  //condition string.
         public static string ShowMoreItems          = "ShowMoreItems";
         public static string SortShowItems          = "SortShowItems";   //column name.
         public static string GetSameFileAllPaths    = "GetSameFileAllPaths";   // split by ';'
+        public static string CancelLoadVolume       = "CancelLoadVolume";
 
         //----------------------to ui.
-        public static string FileListItemClear  = "FileListItemClear";
-        public static string FileListItemAdd    = "FileListItemAdd";
-        public static string FileListItemUpdate = "FileListItemUpdate";
-        public static string FileListItemRemove = "FileListItemRemove";
+        public static string ShowStatusMessage      = "ShowStatusMessage";
+        public static string VolumeIDsUpdate        = "VolumeIDsUpdate";
+        public static string FileListItemClear      = "FileListItemClear";
+        public static string FileListItemAdd        = "FileListItemAdd";
+        public static string FileListItemUpdate     = "FileListItemUpdate";
+        public static string FileListItemRemove     = "FileListItemRemove";
         public static string ShowSameFileAllPaths   = "ShowSameFileAllPaths";
+        public static string UpdateShowedNums       = "UpdateShowedNums";   //;value=10/200
+        public static string UpdateLoadingRate      = "UpdateLoadingRate";  //like:loadingRate=%d,.., volume=%s
 
         public static string getAttributeValue(string attrName, string msg)
         {
@@ -79,6 +83,18 @@ namespace FileComParer
     };
     class DataTable
     {
+        public static string tableBackgroundColor = "tableBackgroundColor";
+        public static string columnHeadersBackColor = "columnHeadersBackColor";
+        public static string rowsBackColor = "rowsBackColor";
+        public static string rowMouseMoveBackColor = "rowMouseMoveBackColor";
+        public static string rowMouseLeaveBackColor = "rowMouseLeaveBackColor";
+        
+        public string m_tableBackgroundColor = ConfigParser.defaultBackColor;
+        public string m_columnHeadersBackColor = ConfigParser.defaultBackColor;
+        public string m_rowsBackColor = ConfigParser.defaultBackColor;
+        public string m_rowMouseMoveBackColor = ConfigParser.defaultBackColor;
+        public string m_rowMouseLeaveBackColor = ConfigParser.defaultBackColor;
+
         public string m_tableName = "";
         public List<TableColumn> m_columns = new List<TableColumn>();
         public DataTable()
@@ -95,6 +111,14 @@ namespace FileComParer
     };
     class DataArea
     {
+        public static string tabPageBackColor = "tabPageBackColor";
+        public static string selectConditionBackColor = "selectConditionBackColor";
+        public static string showCountLabelBackColor = "showCountLabelBackColor";
+
+        public string m_tabPageBackColor = ConfigParser.defaultBackColor;
+        public string m_selectConditionBackColor = ConfigParser.defaultBackColor;
+        public string m_showCountLabelBackColor = ConfigParser.defaultBackColor;
+
         public List<TabArea> m_tabs = new List<TabArea>();
         public DataArea()
         {
@@ -104,21 +128,30 @@ namespace FileComParer
 
     class ConfigParser
     {
+        public static string AppTitle = "show_title";
+        public static string VolumeSelectLabel = "volume_select_label";
+        public static string ReloadVolumeLabel = "reload_volume_label";
+        public static string defaultBackColor = "white";
+        public static string mainFormBackColor = "mainFormBackColor";
+        public static string volumeLabelBackColor = "volumeLabelBackColor";
+        public static string volumeSelectBackColor = "volumeSelectBackColor";
+        public static string volumeloadingButtonBackColor = "volumeloadingButtonBackColor";
+
         string  m_configPath;
         string  m_parseContent;
         bool    m_parsedOk;
         XmlReader m_xmlReader;
-        string m_showTitle;
-        string m_loadVolumeName;
+
+        Dictionary<string, string> m_paras = null;
         DataArea m_dataArea;
         
         public ConfigParser()
         {
             m_configPath = "";
             m_parseContent = "";
-            m_showTitle = "";
-            m_loadVolumeName = "";
             m_parsedOk = false;
+
+            m_paras = new Dictionary<string, string>();
         }
         public bool parseFile(string filePath)
         {
@@ -141,18 +174,14 @@ namespace FileComParer
             {
                 switch (m_xmlReader.NodeType)
                 {
-                    case XmlNodeType.Element:
-                        if ("show_title" == m_xmlReader.Name)
-                        {
-                            parseShowTitle();
-                        }
-                        if ("load_disk_volume" == m_xmlReader.Name)
-                        {
-                            parseLoadVolume();
-                        }
+                    case XmlNodeType.Element:                        
                         if ("data_area" == m_xmlReader.Name)
                         {
                             parseDataArea();
+                        }
+                        else
+                        {
+                            parseSpecialNode(m_xmlReader.Name);
                         }
                         break;
                     case XmlNodeType.Text:
@@ -171,43 +200,32 @@ namespace FileComParer
             m_parsedOk = true;
             return m_parsedOk;
         }
-        private bool parseShowTitle()
+        private bool parseSpecialNode(string nodeName)
         {
-            m_showTitle = "";
+            string value = "";
             if (m_xmlReader.HasAttributes)
             {
-                m_showTitle = tryGetAttribute("value");
+                value = tryGetAttribute("value");
             }
-            if ("" == m_showTitle)
+            if ("" == value)
             {
                 m_xmlReader.Read();
                 if (XmlNodeType.Text == m_xmlReader.NodeType)
                 {
-                    m_showTitle = m_xmlReader.Value;
+                    value = m_xmlReader.Value;
                 }
             }
+            m_paras[nodeName] = value;
             return true;
         }
-        private bool parseLoadVolume()
-        {
-            m_loadVolumeName = "";
-            if (m_xmlReader.HasAttributes)
-            {
-                m_loadVolumeName = tryGetAttribute("value");
-            }
-            if ("" == m_loadVolumeName)
-            {
-                m_xmlReader.Read();
-                if (XmlNodeType.Text == m_xmlReader.NodeType)
-                {
-                    m_loadVolumeName = m_xmlReader.Value;
-                }
-            }
-            return true;
-        }
+        
         private bool parseDataArea()
         {
             m_dataArea = new DataArea();
+            m_dataArea.m_tabPageBackColor = tryGetAttribute(DataArea.tabPageBackColor, ConfigParser.defaultBackColor);
+            m_dataArea.m_selectConditionBackColor = tryGetAttribute(DataArea.selectConditionBackColor, ConfigParser.defaultBackColor);
+            m_dataArea.m_showCountLabelBackColor = tryGetAttribute(DataArea.showCountLabelBackColor, ConfigParser.defaultBackColor);
+
             bool bContinue = true;
             while (bContinue)
             {
@@ -269,6 +287,11 @@ namespace FileComParer
         private bool parseDataTable(DataTable dt)
         {
             dt.m_tableName = tryGetAttribute("tableName");
+            dt.m_tableBackgroundColor = tryGetAttribute(DataTable.tableBackgroundColor, ConfigParser.defaultBackColor);
+            dt.m_columnHeadersBackColor = tryGetAttribute(DataTable.columnHeadersBackColor, ConfigParser.defaultBackColor);
+            dt.m_rowsBackColor = tryGetAttribute(DataTable.rowsBackColor, ConfigParser.defaultBackColor);
+            dt.m_rowMouseMoveBackColor = tryGetAttribute(DataTable.rowMouseMoveBackColor, ConfigParser.defaultBackColor);
+            dt.m_rowMouseLeaveBackColor = tryGetAttribute(DataTable.rowMouseLeaveBackColor, ConfigParser.defaultBackColor);
 
             bool bContinue = true;
             while (bContinue)
@@ -304,33 +327,34 @@ namespace FileComParer
             dt.m_columns.Add(col);
             return true;
         }
-        private string tryGetAttribute(string name)
+        private string tryGetAttribute(string name, string defaultValue)
         {
             try
             {
-                return m_xmlReader.GetAttribute(name);
+                string value = m_xmlReader.GetAttribute(name);
+                if (null != value)
+                    return value;
             }
             catch (System.ArgumentOutOfRangeException)
             {
             }
-            return "";
+            return defaultValue;
         }
-        public string readShowTitle()
+
+        private string tryGetAttribute(string name)
         {
-            if (m_parsedOk)
-            {
-                return m_showTitle;
-            }
-            return "";
+            return tryGetAttribute(name, "");
         }
-        public string readLoadVolume()
+
+        public string getSpecialPara(string paraName, string defaultValue)
         {
-            if (m_parsedOk)
+            if (m_parsedOk && m_paras.ContainsKey(paraName))
             {
-                return m_loadVolumeName;
+                return m_paras[paraName];
             }
-            return "";
+            return defaultValue;
         }
+
         public DataArea readDataArea()
         {
             if (m_parsedOk)
@@ -339,13 +363,12 @@ namespace FileComParer
             }
             return new DataArea();
         }
-        public string readCommuArea()
+
+        public static Color getConfigParaColor(string paraName)
         {
-            if (m_parsedOk)
-            {
-                return m_showTitle;
-            }
-            return "";
+            Color retColor = Color.Red;
+            retColor = Color.FromName(paraName);
+            return retColor;
         }
     }
 }

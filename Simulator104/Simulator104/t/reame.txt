@@ -1,0 +1,5 @@
+DataItemAdd
+DataItemUpdate
+DataItemRemove
+
+Type=DiSinglePoint,Pkey=10000,Addr=1234,SPI=1,OV=1,IV=1

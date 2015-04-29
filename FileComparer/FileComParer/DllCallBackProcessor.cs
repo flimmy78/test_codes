@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace FileComParer
+namespace FileComparer
 {
     public delegate int DllCallBackHandler(string msgType, string msgContent);
 
@@ -45,8 +45,9 @@ namespace FileComParer
             {
                 postMessageToService(msgType, msgContent);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 ret = false;
             }
             return ret;
@@ -60,13 +61,9 @@ namespace FileComParer
                 {
                     processTestMessage(msgContent);
                 }
-                else if (MessageTypes.ShowStatusMessage == msgType)
-                {
-                    m_observerForm.updateStatusMessage(msgContent);
-                }
                 else
                 {
-                    m_observerForm.processDataAreaMessage(msgType, msgContent);
+                    m_observerForm.processCallBackMessage(msgType, msgContent);
                 }
             }
             catch (Exception ex)
@@ -98,7 +95,7 @@ namespace FileComParer
             int contentIdx = msgContent.IndexOf(MessageTypes.MessageSplitSign) +
                 MessageTypes.MessageSplitSign.Length;
 
-            handleDllCallBack(type, msgContent.Substring(contentIdx));            
+            handleDllCallBack(type, msgContent.Substring(contentIdx));
         }
 
     }

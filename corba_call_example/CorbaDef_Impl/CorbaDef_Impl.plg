@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bus.scada.datapointagentcorbadef_impl.TA_DataPointAgentCorbaDef_Impl - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSPAC7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I "..\omniORB_4.0.5\include\\" /I "..\\" /I "..\..\\" /I "..\IDL_src\src\\" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "__WIN32__" /D "__x86__" /D "__NT__" /D __OSVERSION__=4 /Fp"./debug/CorbaDef_Impl.pch" /YX /Fo"./debug/" /Fd"./debug/" /FD /GZ /c 
+"E:\test_code\test_corba_call\CorbaDef_Impl\src\AccessCorbaDef_Impl.cpp"
+]
+Creating command line "cl.exe @C:\Users\haijun.li\AppData\Local\Temp\RSPAC7.tmp" 
+Creating command line "link.exe -lib /nologo /out:"./debug/CorbaDef_Impl_d.lib"  .\debug\AccessCorbaDef_Impl.obj "
+<h3>Output Window</h3>
+Compiling...
+AccessCorbaDef_Impl.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+CorbaDef_Impl_d.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

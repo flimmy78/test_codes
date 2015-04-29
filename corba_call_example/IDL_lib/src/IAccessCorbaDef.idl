@@ -1,0 +1,17 @@
+
+#ifndef IAccessCorbaDef_INCLUDED_
+#define IAccessCorbaDef_INCLUDED_
+
+#include "./src/CorbaTypes.idl"
+
+module Base_Bus
+{
+
+    interface IAccessCorbaDef
+    {
+		void SetATestValue(in Base_Bus::CorbaTypes::EDatapointAlarm v);
+		void sendStringToSvt(in string s);
+    };
+};
+
+#endif

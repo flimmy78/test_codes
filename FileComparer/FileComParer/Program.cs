@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace FileComParer
+namespace FileComparer
 {
     static class Program
     {

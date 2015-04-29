@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "para_use", ".\para_use\para_use.vcproj", "{93D062DE-BE34-40CD-87D7-A2A1A344E829}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "myLib", ".\myLib\myLib.vcproj", "{2B651AA2-116F-489A-8894-68D1C8601494}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93D062DE-BE34-40CD-87D7-A2A1A344E829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93D062DE-BE34-40CD-87D7-A2A1A344E829}.Debug|Win32.Build.0 = Debug|Win32
+		{93D062DE-BE34-40CD-87D7-A2A1A344E829}.Release|Win32.ActiveCfg = Release|Win32
+		{93D062DE-BE34-40CD-87D7-A2A1A344E829}.Release|Win32.Build.0 = Release|Win32
+		{2B651AA2-116F-489A-8894-68D1C8601494}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2B651AA2-116F-489A-8894-68D1C8601494}.Debug|Win32.Build.0 = Debug|Win32
+		{2B651AA2-116F-489A-8894-68D1C8601494}.Release|Win32.ActiveCfg = Release|Win32
+		{2B651AA2-116F-489A-8894-68D1C8601494}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

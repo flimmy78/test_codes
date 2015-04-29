@@ -1,4 +1,4 @@
-﻿namespace FileComParer
+﻿namespace FileComparer
 {
     partial class UserListView
     {

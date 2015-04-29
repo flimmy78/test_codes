@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: derived_lib1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSPB75D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/derived_lib1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\test_code\test_mult_libs\derived_lib1\dClass.cpp"
+]
+Creating command line "cl.exe @C:\Users\haijun.li\AppData\Local\Temp\RSPB75D.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\Debug\derived_lib1.lib"  .\Debug\dClass.obj .\Debug\dClass2.obj "
+<h3>Output Window</h3>
+Compiling...
+dClass.cpp
+Creating library...
+dClass.obj : warning LNK4006: "public: void __thiscall dClass1::xxxx(void)" (?xxxx@dClass1@@QAEXXZ) already defined in dClass2.obj; second definition ignored
+dClass.obj : warning LNK4006: "void __cdecl gg(void)" (?gg@@YAXXZ) already defined in dClass2.obj; second definition ignored
+<h3>
+--------------------Configuration: derived_lib2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSPB828.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/derived_lib2.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\test_code\test_mult_libs\derived_lib2\dClass.cpp"
+]
+Creating command line "cl.exe @C:\Users\haijun.li\AppData\Local\Temp\RSPB828.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\Debug\derived_lib2.lib"  .\Debug\dClass.obj "
+<h3>Output Window</h3>
+Compiling...
+dClass.cpp
+Creating library...
+Creating command line "bscmake.exe /nologo /o"Debug/derived_lib2.bsc"  .\Debug\dClass.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+<h3>
+--------------------Configuration: main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSPB961.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib base_lib.lib derived_lib1.lib derived_lib2.lib /nologo /subsystem:console /incremental:no /pdb:"Debug/main.pdb" /debug /machine:I386 /out:"Debug/main.exe" /pdbtype:sept /libpath:"..\Debug" 
+.\Debug\main.obj
+\test_code\test_mult_libs\Debug\derived_lib1.lib
+\test_code\test_mult_libs\Debug\derived_lib2.lib
+]
+Creating command line "link.exe @C:\Users\haijun.li\AppData\Local\Temp\RSPB961.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+
+
+
+<h3>Results</h3>
+main.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

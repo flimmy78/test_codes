@@ -1,0 +1,110 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ACE DLL"=..\..\..\..\..\..\..\4669\code\cots\ACE\5_3\ACE_wrappers\ace\ace_dll.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DataPointBulkInterfaceTest"=.\DataPointBulkInterfaceTest.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ACE DLL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DataPointAgentCorbaDef_Impl
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bus.scada.datapointagentcorbadef_impl.TA_DataPointAgentCorbaDef_Impl
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bus.scada.datapointcorbadef.TA_DataPointCorbaDef
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bus.scada.datapointcorbadef_impl.TA_DataPointCorbaDef_Impl
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name core.database.TA_DataAccess
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name tstfwk
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bus.scada.datapointagentcorbadef_impl.TA_DataPointAgentCorbaDef_Impl"=..\bus.scada.datapointagentcorbadef_impl.TA_DataPointAgentCorbaDef_Impl.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "bus.scada.datapointcorbadef.TA_DataPointCorbaDef"=..\..\DataPointCorbaDef\bus.scada.datapointcorbadef.TA_DataPointCorbaDef.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "bus.scada.datapointcorbadef_impl.TA_DataPointCorbaDef_Impl"=..\..\DataPointCorbaDef_Impl\bus.scada.datapointcorbadef_impl.TA_DataPointCorbaDef_Impl.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tstfwk"=..\..\..\..\..\cots\CppUnit\CppUnit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

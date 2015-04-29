@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace FileComParer
+namespace FileComparer
 {
     public partial class UserListView : Component
     {
@@ -66,12 +66,12 @@ namespace FileComParer
             bool ret = false;
             char[] cs = new char[1];
             cs[0] = ';';
-            char[] cs2 = new char[1];
-            cs2[0] = ',';
+            string[] cs2 = new string[1];
+            cs2[0] = MessageTypes.MessageSplitSign;
             string[] files = paths.Split(cs);
             for (int i = 0; i < files.Length; ++i)
             {
-                string[] values = files[i].Split(cs2);
+                string[] values = files[i].Split(cs2, StringSplitOptions.None);
                 if (values.Length == 2)
                 {
                     ListViewItem it = new ListViewItem();

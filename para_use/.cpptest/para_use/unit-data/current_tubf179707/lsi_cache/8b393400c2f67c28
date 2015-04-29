@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LibrarySymbols tool="C++Test" formatVersion="1.0" source="C:\Program Files\Parasoft\C++test for Visual Studio\9.1\engine\lib\cpptestsupplement.lib">
+    <Symbol name="_SetErrorMode@4" remangled="ZMSetErrorModeX"/>
+    <Symbol name="__CrtSetReportFile" remangled="ZbB_CrtSetReportFileX"/>
+    <Symbol name="__CrtSetReportMode" remangled="ZbB_CrtSetReportModeX"/>
+    <Symbol name="__IMPORT_DESCRIPTOR_cpptestsupplement" remangled="ZcE_IMPORT_DESCRIPTOR_cpptestsupplementX"/>
+    <Symbol name="__NULL_IMPORT_DESCRIPTOR" remangled="ZbH_NULL_IMPORT_DESCRIPTORX"/>
+    <Symbol name="__imp__SetErrorMode@4" remangled="ZMSetErrorMode5X"/>
+    <Symbol name="__imp___CrtSetReportFile" remangled="ZbB_CrtSetReportFile5X"/>
+    <Symbol name="__imp___CrtSetReportMode" remangled="ZbB_CrtSetReportMode5X"/>
+    <Symbol name="__imp___set_error_mode" remangled="ZP_set_error_mode5X"/>
+    <Symbol name="__set_error_mode" remangled="ZP_set_error_modeX"/>
+</LibrarySymbols>

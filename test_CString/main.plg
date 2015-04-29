@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\haijun.li\AppData\Local\Temp\RSPDDB3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/main.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\test_code\test_CString\main.cpp"
+]
+Creating command line "cl.exe @C:\Users\haijun.li\AppData\Local\Temp\RSPDDB3.tmp" 
+Creating command line "link.exe /nologo /subsystem:console /incremental:yes /pdb:"Debug/main.pdb" /debug /machine:I386 /out:"Debug/main.exe" /pdbtype:sept  .\Debug\main.obj "
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+E:\test_code\test_CString\main.cpp(15) : warning C4305: 'initializing' : truncation from 'const int' to 'bool'
+E:\test_code\test_CString\main.cpp(19) : warning C4800: 'char' : forcing value to bool 'true' or 'false' (performance warning)
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/main.bsc"  .\Debug\main.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+main.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

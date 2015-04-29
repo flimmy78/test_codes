@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Iec104Lib", "Iec104Lib.vcproj", "{CD03C8D2-5928-4ED4-BF31-84ED8A49C923}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLib", "TestLib.vcproj", "{65A3F604-D632-4BA4-8DCC-241398868150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD03C8D2-5928-4ED4-BF31-84ED8A49C923}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD03C8D2-5928-4ED4-BF31-84ED8A49C923}.Debug|Win32.Build.0 = Debug|Win32
+		{CD03C8D2-5928-4ED4-BF31-84ED8A49C923}.Release|Win32.ActiveCfg = Release|Win32
+		{CD03C8D2-5928-4ED4-BF31-84ED8A49C923}.Release|Win32.Build.0 = Release|Win32
+		{65A3F604-D632-4BA4-8DCC-241398868150}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65A3F604-D632-4BA4-8DCC-241398868150}.Debug|Win32.Build.0 = Debug|Win32
+		{65A3F604-D632-4BA4-8DCC-241398868150}.Release|Win32.ActiveCfg = Release|Win32
+		{65A3F604-D632-4BA4-8DCC-241398868150}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

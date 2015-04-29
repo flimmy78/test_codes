@@ -1,0 +1,25 @@
+#ifndef CorbaTypes_INCLUDED_
+#define CorbaTypes_INCLUDED_
+
+module Base_Bus
+{
+	module CorbaTypes
+	{
+		enum EDatapointAlarm
+		{
+			NoAlarm,			// no alarm has been raised only use for alarm state
+			OverScaleHighAlarm,	// OverScaleHi alarm has been raised
+			OverScaleLowAlarm,	// OverScaleLo alarm has been raised
+			VeryHighAlarm,		// HiHi alarm has been raised
+			HighAlarm,			// Hi alarm has been raised
+			LowAlarm,			// Lo alarm has been raised
+			VeryLowAlarm,		// LoLo alarm has been raised
+			TrueAlarm,			// True alarm has been raised
+			FalseAlarm,			// False alarm has been raised
+			GeneralAlarm		// Alarm raised by a derived state
+		};
+	};
+};
+
+#endif
+
